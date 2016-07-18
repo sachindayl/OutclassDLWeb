@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="mainPage.js"></script> 
+<link rel="stylesheet" type="text/css" href="index_page.css">
+</head>
+<body>
+	<h1>Sporting Skills</h1>
+	<h2>Duckworth Lewis Calculator</h2><br/>
+
+	<form action="mainPage.php" method="GET">
+	<div id = mainInfo>
+		<span>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></span><br/><br/>
+		<!-- Toggle Switch -->
+		<span>Did the team 1 bat their full amount of overs? &emsp;
+		<label class="switch">
+  		<input type="checkbox" id="t1CompleteBatCheck" onclick="t1FinalScore()">
+  		<div class="slider round"></div>
+  		</label></span><br/><br/>
+		
+  		<span>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></span>
+  		
+  		<p>Wickets</p>
+  		<input type="text" id="t1Wickets">
+  		<p>Have you already calculated team 1's revise total?</p>
+  		<p>Team 1's score after DL calculation</p>
+  		<p>Wickets</p>
+  		<p>How many overs available to Team 2 at the start of their inning</p>
+	</div>
+	</form>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>
