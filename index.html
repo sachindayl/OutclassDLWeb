@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<script src="mainPage.js"></script> 
 <link rel="stylesheet" type="text/css" href="index_page.css">
 </head>
-<body>
+<body onload="init()">
 	<h1>Sporting Skills</h1>
 	<h2>Duckworth Lewis Calculator</h2><br/>
 	<form action="mainPage.php" method="GET">
-	<div id = mainInfo>
+	<div name = "mainInfo">
 		<span>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></span><br/><br/>
-		<!-- Toggle Switch -->
+		<!-- Toggle Switch 1-->
 		<span>Did the team 1 bat their full amount of overs? &emsp;
-		<label class="switch">
-  		<input type="checkbox" id="t1CompleteBatCheck" onclick="t1FinalScore()">
+		<label class="switch" >
+  		<input type="checkbox" id="t1CompleteBatCheck" onclick="t1finalscore()" checked>
   		<div class="slider round"></div>
   		</label></span><br/><br/>
+
   		<span>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></span><br/><br/>
   		<span>Wickets &emsp;<input type="text" id="t1Wickets"></span><br/><br/>
-  		<span>Have you already calculated team 1's revise total?</span><br/><br/>
-  		<span>Team 1's score after DL calculation &emsp;<input type="text" id="t1DLCalcScore"></span><br/><br/>
-  		<span>Wickets &emsp;<input type="text" id="t1DLCalcWickets"></span><br/><br/>
-  		<span>How many overs available to Team 2 at the start of their inning  &emsp;<input type="text" id="t2OversAvailable"></span>
+  		<!-- Toggle switch 2 -->
+  		<span id="t1revisedtotalcheck">Have you already calculated team 1's revised score? &emsp;
+  		<label class="switch" >
+  		<input type="checkbox" id="t1revisedtotalcheckbox" onclick="t1revisedscore()" checked>
+  		<div class="slider round"></div>
+  		</label></span><br/><br/>
+
+  		<span id="t1scoreafterdlcalc">Team 1's score after DL calculation &emsp;<input type="text" id="t1dlcalcscore"></span><br/><br/>
+  		<span id="t1wktsafterdlcalc">Wickets &emsp;<input type="text" id="t1dlcalcwickets"></span><br/><br/>
+  		<span id="t2oversavailatstart">How many overs available to Team 2 at the start of their inning  &emsp;<input type="text" id="t2Oversavailable"></span><br/><br/>
 	</div>
+		<input type="submit" name="nextpagesubmitbutton" value="Next Page">
 	</form>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="js/mainPage.js"></script> 
 </body>
 </html>

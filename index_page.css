@@ -57,6 +57,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }*/
 
+#t1revisedtotalcheck{
+  visibility: hidden;
+}
+
 #test11{
   float:left;
   clear: left;
