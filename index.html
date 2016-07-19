@@ -8,7 +8,6 @@
 <body>
 	<h1>Sporting Skills</h1>
 	<h2>Duckworth Lewis Calculator</h2><br/>
-
 	<form action="mainPage.php" method="GET">
 	<div id = mainInfo>
 		<span>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></span><br/><br/>
@@ -18,15 +17,12 @@
   		<input type="checkbox" id="t1CompleteBatCheck" onclick="t1FinalScore()">
   		<div class="slider round"></div>
   		</label></span><br/><br/>
-		
-  		<span>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></span>
-  		
-  		<p>Wickets</p>
-  		<input type="text" id="t1Wickets">
-  		<p>Have you already calculated team 1's revise total?</p>
-  		<p>Team 1's score after DL calculation</p>
-  		<p>Wickets</p>
-  		<p>How many overs available to Team 2 at the start of their inning</p>
+  		<span>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></span><br/><br/>
+  		<span>Wickets &emsp;<input type="text" id="t1Wickets"></span><br/><br/>
+  		<span>Have you already calculated team 1's revise total?</span><br/><br/>
+  		<span>Team 1's score after DL calculation &emsp;<input type="text" id="t1DLCalcScore"></span><br/><br/>
+  		<span>Wickets &emsp;<input type="text" id="t1DLCalcWickets"></span><br/><br/>
+  		<span>How many overs available to Team 2 at the start of their inning  &emsp;<input type="text" id="t2OversAvailable"></span>
 	</div>
 	</form>
 	<script type="text/javascript" src="js/jquery.js"></script>
