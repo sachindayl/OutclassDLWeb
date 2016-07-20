@@ -13,7 +13,7 @@ function init(){
 	t1wktsafterdlcalc = document.getElementById('t1wktsafterdlcalc');
 	t2oversavailatstart = document.getElementById('t2oversavailatstart');
 	t1revisedtotalcheckbox = document.getElementById('t1revisedtotalcheckbox');
-
+	t1CompleteBatCheck.checked = true;
 
 	t1revisedtotalcheck.style.visibility = 'hidden';
 	t1scoreafterdlcalc.style.visibility = 'hidden';
