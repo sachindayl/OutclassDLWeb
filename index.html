@@ -8,26 +8,26 @@
 	<h1>Sporting Skills</h1>
 	<h2>Duckworth Lewis Calculator</h2><br/>
 	<div name = "mainInfo">
-		<span>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></span><br/><br/>
+		<p>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></p>
 		<!-- Toggle Switch 1-->
 		<span>Did the team 1 bat their full amount of overs? &emsp;
 		<label class="switch" >
   		<input type="checkbox" id="t1CompleteBatCheck" onclick="t1finalscore()" checked>
   		<div class="slider round"></div>
-  		</label></span><br/><br/>
+  		</label></span><br/>
 
-  		<span>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></span><br/><br/>
-  		<span>Wickets &emsp;<input type="text" id="t1Wickets"></span><br/><br/>
+  		<p>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></p>
+  		<p>Wickets &emsp;<input type="text" id="t1Wickets"></p>
   		<!-- Toggle switch 2 -->
   		<span id="t1revisedtotalcheck">Have you already calculated team 1's revised score? &emsp;
   		<label class="switch" >
   		<input type="checkbox" id="t1revisedtotalcheckbox" onclick="t1revisedscore()" checked>
   		<div class="slider round"></div>
-  		</label></span><br/><br/>
+  		</label></span><br/>
 
-  		<span id="t1scoreafterdlcalc">Team 1's score after DL calculation &emsp;<input type="text" id="t1dlcalcscore"></span><br/><br/>
-  		<span id="t1wktsafterdlcalc">Wickets &emsp;<input type="text" id="t1dlcalcwickets"></span><br/><br/>
-  		<span id="t2oversavailatstart">How many overs available to Team 2 at the start of their inning  &emsp;<input type="text" id="t2Oversavailable"></span><br/><br/>
+  		<p id="t1scoreafterdlcalc">Team 1's score after DL calculation &emsp;<input type="text" id="t1dlcalcscore"></p>
+  		<p id="t1wktsafterdlcalc">Wickets &emsp;<input type="text" id="t1dlcalcwickets"></p>
+  		<p id="t2oversavailatstart">How many overs available to Team 2 at the start of their inning  &emsp;<input type="text" id="t2Oversavailable"></p>
 	</div>
 		<input type="submit" name="nextpagesubmitbutton" value="Next Page" onclick="pageselect()">
 	<script type="text/javascript" src="js/jquery.js"></script>
