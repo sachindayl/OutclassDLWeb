@@ -70,3 +70,22 @@ input:checked + .slider:before {
   float:left;
   clear: left;
 }
+
+#interruptionerror{
+  color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

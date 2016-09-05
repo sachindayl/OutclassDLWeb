@@ -1,22 +1,34 @@
-var t2Interruptions;
-var scenario1ints;
-var t2intValue;
+/*
+Variable Naming Convention: filename_type_variable come first
+*/
+
+var sc1_t2Interruptions;
+var sc1_scenario1ints;
+var sc1_t2intValue;
 // var element_br;
 
 //initializing  variables and setting them up on load.
-function init(){
-	t2Interruptions = document.getElementById('t2Interruptions');
+function scenario1_init(){
+	sc1_t2Interruptions = document.getElementById('t2Interruptions');
 	scenario1ints = document.getElementById('scenario1ints');
 	
 	
 }
 
-function interruptionsetup(){
+function interruptionhtmlsetup(){
 	//delete all the nodes inside the div scenario1ints
 	scenario1ints.innerHTML = '';
 	t2intValue = t2Interruptions.value;
-	i = 0;
-
+	maxInterruptions = 3;
+	interruptionerror = document.getElementById("interruptionerror");
+	interruptionerror.innerHTML = '';
+	if(t2intValue > maxInterruptions){
+		var element_interruptionsNumberError = document.createElement('p');
+		var text_interruptionsNumberError = document.createTextNode('Maximum Number of Interruptions supported is 3');
+		element_interruptionsNumberError.appendChild(text_interruptionsNumberError);
+		interruptionerror.appendChild(element_interruptionsNumberError);
+	}else{
+		i = 0;
 	//dynamically creating all the interruptions
 	while(i < t2intValue){
 		j = i + 1;
@@ -65,9 +77,10 @@ function interruptionsetup(){
 		i++;
 	}
 }
+}
 
 function calculatescore(){
-	var test = document.getElementById('input_playInterruptedOver1').value;
-	alert(test);
+	var value_numOfOversPerSide = localStorage.getItem("value_numOfOversPerSide");
+	alert(value_numOfOversPerSide);
 }
 

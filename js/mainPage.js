@@ -1,3 +1,4 @@
+var numOfOversPerSide;
 var t1CompleteBatCheck;
 var t1revisedtotalcheck;
 var t1scoreafterdlcalc;
@@ -6,7 +7,8 @@ var t2oversavailatstart;
 var t1revisedtotalcheckbox;
 
 //initializing  variables and setting them up on load.
-function init(){
+function mainpage_init(){
+	numOfOversPerSide = document.getElementById('numOfOversPerSide');
 	t1CompleteBatCheck = document.getElementById('t1CompleteBatCheck');
 	t1revisedtotalcheck = document.getElementById('t1revisedtotalcheck');
 	t1scoreafterdlcalc = document.getElementById('t1scoreafterdlcalc');
@@ -54,8 +56,9 @@ function t1revisedscore(){
 	}
 }
 
-// This method selects which scenario should be seen by the user
+// This method selects which scenario should be seen by the user after giving details in the first page
 function pageselect(){
+	mainpage_savedata();
 	if(t1CompleteBatCheck.checked){
 		window.location.href = 'scenario1.html';
 	}else{
@@ -67,6 +70,17 @@ function pageselect(){
 	}
 
 }
+
+function mainpage_savedata(){
+	var value_numOfOversPerSide = numOfOversPerSide.value;
+	localStorage.setItem("value_numOfOversPerSide",value_numOfOversPerSide);
+	// alert(value_numOfOversPerSide);
+}
+
+// function mainpage_retrievedata(retr_value){
+// 	var value = localStorage.getItem(retr_value);
+// 	return value;
+// }
 
 // function test(){
 // 	alert('checked');

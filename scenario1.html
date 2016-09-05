@@ -5,16 +5,29 @@
  
 <link rel="stylesheet" type="text/css" href="css/index_page.css">
 </head>
-<body onload="init()">
+<body onload="scenario1_init()">
 <!-- Scenario 2 contains Team 1 interruptions -->
 	<h1>Sporting Skills</h1>
 	<h2>Duckworth Lewis Calculator</h2><br/>
 
-	<span>How many interruptions in the Team 2's innings? &emsp;<input type="text" id="t2Interruptions"> &emsp; <input type="submit" value="Submit" onclick="interruptionsetup()"></span>
-
+	<span>How many interruptions in the Team 2's innings? &emsp;<input type="text" id="t2Interruptions"> &emsp; <input type="submit" value="Submit" onclick="interruptionhtmlsetup()"></span>
+	<div id=interruptionerror></div>
 	<div id=scenario1ints></div>
-	<button name="calculateScore" onclick="calculatescore()">Calculate</button>
+	<button name="calculateScore" onclick="numOfInterruptionsPass()">Calculate</button>
+	
+
+
+
+
+
+
+
+
+
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="js/scenario1.js"></script>
+	<script src="js/datamap.js"></script>
+	<script src="js/interruptionSetup.js"></script>
 </body>
 </html>

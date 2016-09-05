@@ -4,11 +4,11 @@
 <title>DL Calculator</title>
 <link rel="stylesheet" type="text/css" href="css/index_page.css">
 </head>
-<body onload="init()">
+<body onload="mainpage_init()">
 	<h1>Sporting Skills</h1>
 	<h2>Duckworth Lewis Calculator</h2><br/>
 	<div name = "mainInfo">
-		<p>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide"></p>
+		<p>Number of overs per side (50 overs of less) &emsp;<input type="text" id="numOfOversPerSide" value="50"></p>
 		<!-- Toggle Switch 1-->
 		<span>Did the team 1 bat their full amount of overs? &emsp;
 		<label class="switch" >
@@ -16,8 +16,8 @@
   		<div class="slider round"></div>
   		</label></span><br/>
 
-  		<p>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore"></p>
-  		<p>Wickets &emsp;<input type="text" id="t1Wickets"></p>
+  		<p>Team 1 Final Score &emsp;<input type="text" id="t1FinalScore" value="250"></p>
+  		<p>Wickets &emsp;<input type="text" id="t1Wickets" value="3"></p>
   		<!-- Toggle switch 2 -->
   		<span id="t1revisedtotalcheck">Have you already calculated team 1's revised score? &emsp;
   		<label class="switch" >
@@ -31,6 +31,7 @@
 	</div>
 		<input type="submit" name="nextpagesubmitbutton" value="Next Page" onclick="pageselect()">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script src="js/mainPage.js"></script> 
+	<script src="js/mainPage.js"></script>
+  <script src="js/interruptionSetup.js"></script> 
 </body>
 </html>
